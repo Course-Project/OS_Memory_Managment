@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Tom Hu (webmaster@h1994st.com)
+ * @date    2014-05-24 12:33:33
+ * @version 1.0
+ */
+
+html {
+  font-family: sans-serif;
+}
+textarea {
+  resize: none;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 780px;
+}

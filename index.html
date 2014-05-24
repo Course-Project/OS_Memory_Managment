@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="OS Memory Management Project">
+    <meta name="keywords" content="OS,Memory Management,Tongji,Course Project">
+    <meta name="author" content="Tom Hu">
+
+    <title>OS Memory Management</title>
+    
+    <!-- Core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>内存管理项目 <small>请求调页模拟</small></h1>
+      </header>
+
+      <main id="main">
+        <div class="algorithm-input">
+          <h4>算法选择</h4>
+          <label for="fifo-ratio1">
+            <input type="radio" name="algorithm" id="FIFORatio" value="FIFO" checked> FIFO
+          </label>
+          <label for="lru-ratio">
+            <input type="radio" name="algorithm" id="LRURatio" value="LRU"> LRU
+          </label>
+        </div><!-- /.algorithm-input -->
+
+        <div class="algorithm-detail">
+          <h4>模拟信息</h4>
+          <p>内存块数：<span id="numberOfTotalMemoryBlocks">4</span></p>
+          <p>总指令数：<span id="numberOfTotalInstructions">320</span></p>
+          <p>每个页面存放的指令数：<span id="numberOfInstructionsInEachPage">10</span></p>
+        </div><!-- /algorithm-detail -->
+
+        <div class="algorithm-result">
+          <h4>模拟结果</h4>
+          <p>当前指令：<span id="currentInstruction">-1</span></p>
+          <p>缺页次数：<span id="numberOfMissingPages">-1</span></p>
+          <p>缺页率：<span id="pageFaultRate">NULL</span></p>
+        </div>
+
+        <button id="startBtn" type="button">开始模拟</button>
+        
+        <div class="algorithm-console">
+          <textarea class="console" name="console" id="console" cols="30" rows="30" placeholder="输出信息" readonly></textarea><!-- /.console -->
+        </div><!-- /.algorithm-console -->
+      </main><!-- /#main -->
+
+      <footer>
+        
+      </footer>
+    </div>
+
+    <!-- Core JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
