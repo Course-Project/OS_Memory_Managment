@@ -8,6 +8,7 @@
 
 html {
   font-family: sans-serif;
+  color: #131313;
 }
 textarea {
   resize: none;
@@ -15,8 +16,28 @@ textarea {
   overflow-x: hidden;
 }
 
+header {
+  border-bottom: 1px solid #cacaca;
+}
+header * {
+  text-align: center;
+}
+header h1 small {
+  color: #a5a5a5;
+}
+
+h4 {
+  color: #3BA4DF;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 780px;
+}
+
+.algorithm-detail,
+.algorithm-result {
+  width: 50%;
+  float: left;
 }

@@ -327,7 +327,7 @@
         console.log("开始模拟")
 
         // 初始化内存
-        initMemory();
+        // initMemory();
 
         // Choose algrithm and start
         chooseAlgrithm();
